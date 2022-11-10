@@ -1,7 +1,17 @@
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* CLEARFIX */
+
+.clearfix::after {
+    content: “”;
+    display: table;
+    clear: both;   
 }
 
 body {
@@ -9,6 +19,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* MAIN HEADER */
 
 h1 {
     margin: 40px 0;
@@ -20,4 +32,85 @@ header > p {
     text-align: center;
     font-weight: 300;
 }
+
+/* CONTENITORE */
+
+.container {
+    padding: 35px 35px;
+}
+
+/* MEMBRI */
+
+.card-left{
+    width: 350px;
+    height: 90px;
+    background-color: #0f0e17;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.95);
+}
+
+.card-center {
+    width: 350px;
+    height: 90px;
+    background-color: #0f0e17;
+    float: left;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.95);
+}
+
+.card-right{
+    float: right;
+    width: 350px;
+    height: 90px;
+    background-color: #0f0e17;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.95);
+}
+
+.card-left > img {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-right: 10px;
+}
+
+.card-center > img {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-right: 10px;
+}
+
+.card-right > img {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-right: 10px;
+}
+
+.info {
+    float: left;
+}
+
+.name, .role {
+    color: #fffffe;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.role{
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #62b9de;
+    margin-bottom: 5px;
+}
+
 
